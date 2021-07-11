@@ -1,0 +1,140 @@
+/* !
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+xxl: 1400px
+*/
+
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #fff;
+}
+
+/* !REUSABLE */
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.spacer-1 {
+    height: 30px;
+}
+
+.spacer-2 {
+    height: 45px;
+}
+
+.spacer-3 {
+    height: 60px;
+}
+
+.spacer-4 {
+    height: 100px;
+}
+
+.spacer-5 {
+    height: 130px;
+}
+
+header {
+    background-image: url('../images/herobanner.jpg');
+    background-size: cover;
+    background-position: right;
+}
+
+
+/* !NAVIGATION */
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--secondary-color);
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: var(--primary-color);
+}
+
+.navbar-brand {
+    width: 80px;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+/* !HERO SECTION */
+.hero .subText a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* !THREE MOVIES SECTION */
+.threeMoviesRow {
+    margin-top: -130px;
+}
+
+@media (max-width: 1200px) {
+    .threeMoviesRow {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .threeMoviesRow {
+        margin-top: 0;
+    }
+}
+
+
+.threeMoviesRow .imageRound {
+    border-radius: 15px;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.562))
+}
+
+.imageRound .info {
+    color: var(--secondary-color);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.733));
+    width: 100%;
+}
+
+.imageRound .info i {
+    color: var(--primary-color);
+}
+
+/* !TABS SECTION */
+.tabs button {
+    color: #000;
+}
+
+.tabs button:hover,
+.tabs button.active {
+    background-color: transparent !important;
+    color: var(--primary-color) !important;
+}
+
+.searchInTab {
+    width: 35%;
+}
+
+.searchInTab input::placeholder {
+    color: var(--primary-color);
+}
+
+.searchInTab span {
+    color: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+    .searchInTab {
+        width: 75%;
+    }
+}

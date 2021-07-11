@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap/icons/font/bootstrap-icons.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
+    <!-- LINKING  CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/images/logo-top.png" type="image/x-icon">
+
+    <title>Star Cineplex</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark container pt-0">
+          <div class="container-fluid">
+            <a class="navbar-brand pt-0" href="/">
+              <img src="./assets/images/logo-top.png" alt="Star Cineplex" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav text-uppercase">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recommended</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Newsletter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="hero container py-5 my-5">
+          <h1 class="text-white">Sucide Squad</h1>
+          <div class="subText my-4">
+            <a href="#" class="text-white pe-3 text-decoration-none fs-5"
+              >Adventure</a
+            >
+            <a href="#" class="text-white pe-3 text-decoration-none fs-5"
+              >Thriller</a
+            >
+            <a href="#" class="text-white pe-3 text-decoration-none fs-5"
+              >Comedy</a
+            >
+          </div>
+          <button type="button" class="btn btn-primary rounded-pill">
+            Watch Me <i class="bi bi-play-circle"></i>
+          </button>
+        </div>
+        <div class="spacer-5"></div>
+      </header>
+    </section>
+
+    <!-- THREE MOVIES ROW START-->
+    <section class="threeMoviesRow">
+      <div class="container">
+        <div class="row align-items-center my-3">
+          <div class="col-sm-10 col-md-4 col-lg-3 my-3">
+            <div class="imageRound overflow-hidden position-relative">
+              <img src="./assets/images/zootopia.jpeg" class="w-100" alt="Zootopia">
+              <div class="info position-absolute bottom-0 pb-1 ps-3 ">
+                <i class="bi bi-play-circle fs-2"></i>
+                <p>Zootopia</p>
+              </div>
+          </div>
+          </div>
+          <div class="col-sm-10 col-md-4 col-lg-3 my-3">
+            <div class="imageRound overflow-hidden position-relative">
+              <img src="./assets/images/ice-age-3.jpg" class="w-100" alt="Zootopia">
+              <div class="info position-absolute bottom-0 pb-1 ps-3 ">
+                <i class="bi bi-play-circle fs-2"></i>
+                <p>Ice Age 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-4 col-lg-3 my-3">
+            <div class="imageRound overflow-hidden position-relative">
+              <img src="./assets/images/ballerina.jpg" class="w-100" alt="Zootopia">
+              <div class="info position-absolute bottom-0 pb-1 ps-3 ">
+                <i class="bi bi-play-circle fs-2"></i>
+                <p>Ballerina</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col"></div>
+
+        </div>
+      </div>
+    </section>
+    <!-- THREE MOVIES ROW END-->
+
+    <!-- TABS SECTION START -->
+    <section>
+      <div class="container my-5 pt-5 tabs">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="searchInTab mx-auto my-4">
+            <div class="input-group flex-nowrap">
+                <input type="text" class="form-control border-0" placeholder="Search..." aria-label="Username" aria-describedby="addon-wrapping">
+                <span class="input-group-text border-0 bg-white" id="addon-wrapping">
+                  <i class="bi bi-search"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+        </div>
+      </div>
+    </section>
+    <!-- TABS SECTION END -->
+
+    <!-- BOOTSTRAP -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- LINKING JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
